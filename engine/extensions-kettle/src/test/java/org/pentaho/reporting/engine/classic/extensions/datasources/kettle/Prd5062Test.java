@@ -18,13 +18,14 @@
 package org.pentaho.reporting.engine.classic.extensions.datasources.kettle;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.pentaho.reporting.engine.classic.core.ClassicEngineBoot;
 import org.pentaho.reporting.engine.classic.core.MasterReport;
 import org.pentaho.reporting.engine.classic.core.testsupport.ReportWritingUtil;
 
 import static org.junit.Assert.*;
-
+//@Ignore
 public class Prd5062Test {
   private static final String QUERY =
     "src/test/resources/org/pentaho/reporting/engine/classic/extensions/datasources/kettle/row-gen.ktr";;
