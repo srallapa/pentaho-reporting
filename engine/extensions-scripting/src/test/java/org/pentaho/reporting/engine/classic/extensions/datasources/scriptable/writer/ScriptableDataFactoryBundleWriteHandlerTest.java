@@ -33,6 +33,7 @@ import java.util.List;
 
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
+import org.mockito.Mockito;
 import org.pentaho.reporting.engine.classic.core.modules.parser.bundle.writer.BundleWriterException;
 import org.pentaho.reporting.engine.classic.core.modules.parser.bundle.writer.BundleWriterState;
 import org.pentaho.reporting.engine.classic.extensions.datasources.scriptable.ScriptableDataFactory;
@@ -56,7 +57,7 @@ public class ScriptableDataFactoryBundleWriteHandlerTest {
 
     doReturn( "/" ).when( state ).getFileName();
     doReturn( xmlWriter ).when( handler )
-        .createXmlWriter( any( OutputStream.class ), any( DefaultTagDescription.class ) );
+        .createXmlWriter( Mockito.<OutputStream>any(), Mockito.<DefaultTagDescription>any() );
     doReturn( new String[] { "test_query_name" } ).when( dataFactory ).getQueryNames();
     doReturn( "test_query" ).when( dataFactory ).getQuery( "test_query_name" );
 
