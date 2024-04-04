@@ -17,13 +17,14 @@
 
 package org.pentaho.reporting.engine.classic.extensions.datasources.kettle;
 
+import org.junit.Ignore;
 import org.pentaho.reporting.engine.classic.core.DataFactory;
 import org.pentaho.reporting.engine.classic.core.ReportDataFactoryException;
 import org.pentaho.reporting.engine.classic.core.StaticDataRow;
 import org.pentaho.reporting.engine.classic.core.designtime.datafactory.DesignTimeDataFactoryContext;
 import org.pentaho.reporting.engine.classic.core.metadata.DataFactoryMetaData;
 import org.pentaho.reporting.engine.classic.core.testsupport.DataSourceTestBase;
-
+//@Ignore
 public class KettleDataFactoryTest extends DataSourceTestBase {
   private static final String QUERY =
     "src/test/resources/org/pentaho/reporting/engine/classic/extensions/datasources/kettle/row-gen.ktr";

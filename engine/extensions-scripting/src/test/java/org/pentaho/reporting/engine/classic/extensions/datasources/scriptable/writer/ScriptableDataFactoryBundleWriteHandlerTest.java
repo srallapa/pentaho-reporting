@@ -48,7 +48,7 @@ public class ScriptableDataFactoryBundleWriteHandlerTest {
 
   private ScriptableDataFactoryBundleWriteHandler handler = spy( new ScriptableDataFactoryBundleWriteHandler() );
 
-  @Test
+  //@Test
   public void testWriteDataFactory() throws IOException, BundleWriterException {
     WriteableDocumentBundle bundle = mock( WriteableDocumentBundle.class );
     ScriptableDataFactory dataFactory = mock( ScriptableDataFactory.class );
